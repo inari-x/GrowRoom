@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Plants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Drag and Drop Plants</h1>
+    <label for="plantSelect">Select a plant:</label>
+    <select id="plantSelect">
+      <!-- Populate with options using JavaScript -->
+    </select>
+    <div class="tables">
+      <!-- Repeat table structure for each table -->
+      <div class="table" id="table1">
+        <h2>Table 1</h2>
+        <!-- Rows for Table 1 -->
+        <div class="row">
+          <div class="place" id="table1_place1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table1_place4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table1_place7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table1_place10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table1_place13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table1_place16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table1_place18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+      <div class="table" id="table2">
+        <h2>Table 2</h2>
+        <!-- Rows for Table 2 -->
+        <div class="row">
+          <div class="place" id="table2_place1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table2_place4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table2_place7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table2_place10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table2_place13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table2_place16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table2_place18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+      <!-- Repeat for Table 3 and Table 4 -->
+      <div class="table" id="table3">
+        <h2>Table 3</h2>
+        <!-- Rows for Table 3 -->
+        <div class="row">
+          <div class="place" id="table3_place1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table3_place4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table3_place7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table3_place10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table3_place13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table3_place16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table3_place18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+      <div class="table" id="table4">
+        <h2>Table 4</h2>
+        <!-- Rows for Table 4 -->
+        <div class="row">
+          <div class="place" id="table4_place1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table4_place4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table4_place7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table4_place10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table4_place13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="row">
+          <div class="place" id="table4_place16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="place" id="table4_place18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

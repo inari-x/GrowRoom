@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table {
+  width: calc(50% - 10px); /* Adjust width for 2 tables in a row with gap */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.place {
+  width: 30px;
+  height: 30px;
+  border: 1px dashed #ccc;
+}
+
+.draggable-plant {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.remove-button {
+  margin-left: 5px;
+  cursor: pointer;
+}
