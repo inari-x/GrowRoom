@@ -115,4 +115,11 @@ document.addEventListener('DOMContentLoaded', function() {
       createPlantPopup.style.display = 'none';
     }
   });
+
+  // Add event listeners to the table spaces
+  const tablePlaces = document.querySelectorAll('.place');
+  tablePlaces.forEach(place => {
+    place.addEventListener('dragover', allowDrop);
+    place.addEventListener('drop', drop);
+  });
 });
