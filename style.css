@@ -47,8 +47,20 @@ h1 {
   margin-bottom: 10px;
 }
 
+.rowHeader{
+  text-align:center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.rowHeader h3{
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
 .place {
-  width: 40px;
+  width: 100px;
   height: 40px;
   border: 2px dashed #4caf50;
   background-color: #f0f0f0;
