@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const plants = [
-    { id: 1, name: 'Plant 1', image: 'plant1.jpg' },
-    { id: 2, name: 'Plant 2', image: 'plant2.jpg' },
-    { id: 3, name: 'Plant 3', image: 'plant3.jpg' },
-    { id: 4, name: 'Plant 4', image: 'plant4.jpg' }
+    { id: 1, name: 'LCG', image: 'plant1.jpg' },
+    { id: 2, name: 'CF', image: 'plant2.jpg' },
+    { id: 3, name: 'BP', image: 'plant3.jpg' },
+    { id: 4, name: 'HOG', image: 'plant4.jpg' }
   ];
 
   const plantSelect = document.getElementById('plantSelect');
