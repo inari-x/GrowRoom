@@ -9,10 +9,13 @@
 <body>
   <div class="container">
     <h1>Grow Room</h1>
+    <div class="plantSelect">
     <label for="plantSelect">Select a plant:</label>
     <select id="plantSelect">
       <!-- Populate with options using JavaScript -->
     </select>
+    </div>
+    <button id="createPlantButton">Create Plant</button>
     <div class="selected-plants" id="selectedPlants"></div>
     <div class="tables">
       <!-- Repeat table structure for each table -->
@@ -153,6 +156,19 @@
           <div class="place" id="table4_place18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Create Plant Popup -->
+  <div id="createPlantPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Create a New Plant</h2>
+      <label for="plantName">Plant Name:</label>
+      <input type="text" id="plantName">
+      <label for="plantImage">Plant Image URL:</label>
+      <input type="text" id="plantImage">
+      <button id="addPlantButton">Add Plant</button>
     </div>
   </div>
 
