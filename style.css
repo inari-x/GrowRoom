@@ -1,26 +1,44 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #e0ffe0;
+  background-image: url('background.jpg');
+  background-size: cover;
 }
 
 .container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
 }
 
 .tables {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .table {
-  width: calc(50% - 10px); /* Adjust width for 2 tables in a row with gap */
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
+  width: 45%; /* Adjust width for 2 tables in a row */
+  border: 1px solid #4caf50;
   padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.table h2 {
+  text-align: center;
+  color: #4caf50;
 }
 
 .row {
@@ -30,19 +48,33 @@ body {
 }
 
 .place {
-  width: 30px;
-  height: 30px;
-  border: 1px dashed #ccc;
+  width: 40px;
+  height: 40px;
+  border: 2px dashed #4caf50;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .draggable-plant {
   margin: 5px 0;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #4caf50;
   background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .remove-button {
-  margin-left: 5px;
+  margin-left: 10px;
   cursor: pointer;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 5px;
 }
